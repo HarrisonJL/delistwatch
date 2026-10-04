@@ -1,0 +1,575 @@
+[
+ {
+  "step": "register",
+  "watch_id": "kucoin-storj",
+  "tx": "0x1bfaca298fd171b148930bc1eba853d777155fada07928c0d2e40d6256dc01eb",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "watch": {
+   "announcements_url": "https://www.kucoin.com/_api/cms/articles?page=1&pageSize=50&category=delistings&lang=en_US",
+   "base": "STORJ",
+   "check_count": 0,
+   "exchange": "kucoin",
+   "label": "STORJ/USDT on KuCoin (its STORJ futures were delisted in August)",
+   "market_url": "https://api.kucoin.com/api/v2/symbols/STORJ-USDT",
+   "quote": "USDT",
+   "registered_at": "2026-10-04T18:19:58.298990+00:00",
+   "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "watch_id": "kucoin-storj"
+  }
+ },
+ {
+  "step": "register",
+  "watch_id": "okx-storj",
+  "tx": "0xbe4cf3e527136dfb7d823e77ae1b19fad0a08b3b28647320733c2c6e9828605f",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "watch": {
+   "announcements_url": "https://www.okx.com/api/v5/support/announcements?annType=announcements-delistings",
+   "base": "STORJ",
+   "check_count": 0,
+   "exchange": "okx",
+   "label": "STORJ/USDT on OKX (delisting scheduled 3 Oct 2026)",
+   "market_url": "https://www.okx.com/api/v5/public/instruments?instType=SPOT&instId=STORJ-USDT",
+   "quote": "USDT",
+   "registered_at": "2026-10-04T18:20:04.878728+00:00",
+   "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "watch_id": "okx-storj"
+  }
+ },
+ {
+  "step": "register",
+  "watch_id": "binance-storj",
+  "tx": "0x8a756e2c52e344cfbd59f0b61db9d604b547401c86c4d9ed7c1d9cb0ecc14ec0",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "IDLE",
+   "AGREE"
+  ],
+  "watch": {
+   "announcements_url": "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo=1&pageSize=50&catalogId=161",
+   "base": "STORJ",
+   "check_count": 0,
+   "exchange": "binance",
+   "label": "STORJ/USDT on Binance (delisting scheduled 3 Sep 2026)",
+   "market_url": "https://data-api.binance.vision/api/v3/exchangeInfo?symbol=STORJUSDT",
+   "quote": "USDT",
+   "registered_at": "2026-10-04T18:20:11.714163+00:00",
+   "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "watch_id": "binance-storj"
+  }
+ },
+ {
+  "step": "register",
+  "watch_id": "binance-btc",
+  "tx": "0x7796963d5c581d7b40a019f0612e74aafd1b5bf9b57899452f1c2a9365f72c62",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "IDLE"
+  ],
+  "watch": {
+   "announcements_url": "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo=1&pageSize=50&catalogId=161",
+   "base": "BTC",
+   "check_count": 0,
+   "exchange": "binance",
+   "label": "BTC/USDT on Binance",
+   "market_url": "https://data-api.binance.vision/api/v3/exchangeInfo?symbol=BTCUSDT",
+   "quote": "USDT",
+   "registered_at": "2026-10-04T18:20:18.316989+00:00",
+   "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "watch_id": "binance-btc"
+  }
+ },
+ {
+  "step": "register",
+  "watch_id": "okx-btc",
+  "tx": "0x1acff24e7c8dad08a99a8fb8b2f2198a04fffd546f5843005faeb992bc740327",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "IDLE"
+  ],
+  "watch": {
+   "announcements_url": "https://www.okx.com/api/v5/support/announcements?annType=announcements-delistings",
+   "base": "BTC",
+   "check_count": 0,
+   "exchange": "okx",
+   "label": "BTC/USDT on OKX",
+   "market_url": "https://www.okx.com/api/v5/public/instruments?instType=SPOT&instId=BTC-USDT",
+   "quote": "USDT",
+   "registered_at": "2026-10-04T18:20:24.968194+00:00",
+   "registrant": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "watch_id": "okx-btc"
+  }
+ },
+ {
+  "step": "refuse",
+  "watch_id": "bybit-btc",
+  "args": [
+   "bybit-btc",
+   "bybit",
+   "BTC",
+   "USDT",
+   "unsupported exchange"
+  ],
+  "tx": "0xb70f953f0fc9233546c0f1b662ca26642de18a4de486cfd2bcdaa1cee10f8a56",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ]
+ },
+ {
+  "step": "refuse",
+  "watch_id": "okx-inject",
+  "args": [
+   "okx-inject",
+   "okx",
+   "BTC-USDT&instType=SWAP",
+   "USDT",
+   "ticker injecting a query parameter"
+  ],
+  "tx": "0x9b2ce72cedce9f62e83196d57f03f27a00a4580d244abb5e234f31fd94b7b1f5",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ]
+ },
+ {
+  "step": "check",
+  "watch_id": "kucoin-storj",
+  "tx": "0xaeaa61eaeb20e45d959714408a4410d64ae75b8e58f377dfa27a09fae9d97bd6",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "IDLE"
+  ],
+  "check": {
+   "check_id": 0,
+   "checked_at": "2026-10-04T18:20:50.409707+00:00",
+   "effective_date": "",
+   "facts": {
+    "announcements": [
+     {
+      "complete": true,
+      "date": "2026-08-23",
+      "delisting_category": true,
+      "excerpt_chars": 3552,
+      "excerpt_digest": "4c20c8469cdf86fdeea6b5dbe9bcf0417649ae157899585b1050176768ddcb95",
+      "excerpt_preview": "KuCoin Futures Will Delist the ICXUSDT and STORJUSDT Perpetual Contracts and Related Services (2026-08-26)\nTo mitigate market risks and provide users with a better trading experience, KuCoin Futures will delist the following perpetual contracts at 7:00 on August 26, 2026 (UTC) .\nThe detailed delisti",
+      "names_token": true,
+      "readable": true,
+      "ref": "/en-kucoin-futures-will-delist-the-icxusdt-and-storjusdt-perpetual-contracts-and-related-services-2026-08-26",
+      "title": "KuCoin Futures Will Delist the ICXUSDT and STORJUSDT Perpetual Contracts and Related Services (2026-08-26)",
+      "url": "https://www.kucoin.com/_api/cms/articles/en-kucoin-futures-will-delist-the-icxusdt-and-storjusdt-perpetual-contracts-and-related-services-2026-08-26?lang=en_US"
+     }
+    ],
+    "as_of": "2026-10-04",
+    "list_covers_lookback": true,
+    "list_ok": true,
+    "list_reaches": "2026-04-15",
+    "market_detail": "enableTrading=true",
+    "market_state": "TRADING",
+    "market_url": "https://api.kucoin.com/api/v2/symbols/STORJ-USDT",
+    "matching_announcements": 1,
+    "scan_truncated": false
+   },
+   "reading": {
+    "effective_date": null,
+    "ends_spot": false,
+    "evidence": null,
+    "grounded": false
+   },
+   "reasons": [],
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "verdict": "TRADING",
+   "watch_id": "kucoin-storj"
+  }
+ },
+ {
+  "step": "check",
+  "watch_id": "okx-storj",
+  "tx": "0x3d547be4265e8803089dbdc51ad625ffdeb6f5a36f2a72681d3d3ded8306ef8e",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "check": {
+   "check_id": 1,
+   "checked_at": "2026-10-04T18:21:07.500149+00:00",
+   "effective_date": "",
+   "facts": {
+    "announcements": [],
+    "as_of": "2026-10-04",
+    "list_covers_lookback": null,
+    "list_ok": null,
+    "list_reaches": "",
+    "market_detail": "Instrument ID doesn't exist",
+    "market_state": "NOT_LISTED",
+    "market_url": "https://www.okx.com/api/v5/public/instruments?instType=SPOT&instId=STORJ-USDT",
+    "matching_announcements": 0,
+    "scan_truncated": false
+   },
+   "reading": null,
+   "reasons": [
+    "market_not_listed:Instrument ID doesn't exist"
+   ],
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "verdict": "NOT_TRADING",
+   "watch_id": "okx-storj"
+  }
+ },
+ {
+  "step": "check",
+  "watch_id": "binance-storj",
+  "tx": "0xcef68338a532cc9de154bea74cb4625d910a721cb90efce522148bb9b89102d6",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "check": {
+   "check_id": 2,
+   "checked_at": "2026-10-04T18:21:19.755901+00:00",
+   "effective_date": "",
+   "facts": {
+    "announcements": [],
+    "as_of": "2026-10-04",
+    "list_covers_lookback": null,
+    "list_ok": null,
+    "list_reaches": "",
+    "market_detail": "status=BREAK",
+    "market_state": "NOT_TRADING",
+    "market_url": "https://data-api.binance.vision/api/v3/exchangeInfo?symbol=STORJUSDT",
+    "matching_announcements": 0,
+    "scan_truncated": false
+   },
+   "reading": null,
+   "reasons": [
+    "market_not_trading:status=BREAK"
+   ],
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "verdict": "NOT_TRADING",
+   "watch_id": "binance-storj"
+  }
+ },
+ {
+  "step": "check",
+  "watch_id": "binance-btc",
+  "tx": "0xc5e75e8a93ef51620afd896787cfc1efb08d55e8247b5d502dc4c1888c12671c",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "IDLE"
+  ],
+  "check": {
+   "check_id": 3,
+   "checked_at": "2026-10-04T18:21:31.548574+00:00",
+   "effective_date": "",
+   "facts": {
+    "announcements": [
+     {
+      "complete": true,
+      "date": "2026-09-29",
+      "delisting_category": true,
+      "excerpt_chars": 1545,
+      "excerpt_digest": "2980240957b518173a0a1bb64e57523cc1232b9b3899473c6b8b47866144794e",
+      "excerpt_preview": "Notice of Removal of Spot Trading Pairs - 2026-10-02\nThis is a general Binance Exchange Notice. Products and services referred to here may not be available in your region.\nFellow Binancians,\nTo protect users and maintain a high quality trading market, Binance conducts periodic reviews of all listed ",
+      "names_token": false,
+      "readable": true,
+      "ref": "63415de54a164619aaaf245850349654",
+      "title": "Notice of Removal of Spot Trading Pairs - 2026-10-02",
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=63415de54a164619aaaf245850349654"
+     },
+     {
+      "complete": true,
+      "date": "2026-09-23",
+      "delisting_category": true,
+      "excerpt_chars": 1300,
+      "excerpt_digest": "19bcc08608ed8c4d69e996764fa07261f57cd4930081069a653956a9800857e8",
+      "excerpt_preview": "Binance Will Close UAH Deposits and Withdrawals via Fiat Trade UAH and Delist USDT/UAH Spot Trading Pair\nThis is a general announcement. The products and services mentioned may not be available in your region. Terms & Conditions apply.\nFellow Binancians,\nBinance will close UAH deposits and withdrawa",
+      "names_token": false,
+      "readable": true,
+      "ref": "7d17add1ffe6416391f65a001734e1c7",
+      "title": "Binance Will Close UAH Deposits and Withdrawals via Fiat Trade UAH and Delist USDT/UAH Spot Trading Pair",
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=7d17add1ffe6416391f65a001734e1c7"
+     },
+     {
+      "complete": true,
+      "date": "2026-09-22",
+      "delisting_category": true,
+      "excerpt_chars": 1598,
+      "excerpt_digest": "426de61bfe117bb0d60e05eb63eae934ad761880c43583910ad6d533d194fc80",
+      "excerpt_preview": "Notice of Removal of Spot Trading Pairs - 2026-09-25\nThis is a general Binance Exchange Notice. Products and services referred to here may not be available in your region.\nFellow Binancians,\nTo protect users and maintain a high quality trading market, Binance conducts periodic reviews of all listed ",
+      "names_token": false,
+      "readable": true,
+      "ref": "545ca5ad28254999b793bcf1ddd51f93",
+      "title": "Notice of Removal of Spot Trading Pairs - 2026-09-25",
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=545ca5ad28254999b793bcf1ddd51f93"
+     },
+     {
+      "complete": true,
+      "date": "2026-09-16",
+      "delisting_category": true,
+      "excerpt_chars": 1563,
+      "excerpt_digest": "bbeca0fa565424c424a41ddcbdbc058fc06e92520aededa88e354931cf91a912",
+      "excerpt_preview": "Notice of Removal of Spot Trading Pairs - 2026-09-18\nThis is a general Binance Exchange Notice. Products and services referred to here may not be available in your region.\nFellow Binancians,\nTo protect users and maintain a high quality trading market, Binance conducts periodic reviews of all listed ",
+      "names_token": false,
+      "readable": true,
+      "ref": "30b1347d97324180bb469c761e4eed5a",
+      "title": "Notice of Removal of Spot Trading Pairs - 2026-09-18",
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=30b1347d97324180bb469c761e4eed5a"
+     }
+    ],
+    "as_of": "2026-10-04",
+    "list_covers_lookback": true,
+    "list_ok": true,
+    "list_reaches": "2026-05-25",
+    "market_detail": "status=TRADING",
+    "market_state": "TRADING",
+    "market_url": "https://data-api.binance.vision/api/v3/exchangeInfo?symbol=BTCUSDT",
+    "matching_announcements": 4,
+    "scan_truncated": false
+   },
+   "reading": null,
+   "reasons": [],
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "verdict": "TRADING",
+   "watch_id": "binance-btc"
+  }
+ },
+ {
+  "step": "check",
+  "watch_id": "okx-btc",
+  "tx": "0xd5f81f61fb44796eb9a790d4c1c9ea00cdfd6e102930a027330be8675e202d7f",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "check": {
+   "check_id": 4,
+   "checked_at": "2026-10-04T18:21:43.514678+00:00",
+   "effective_date": "",
+   "facts": {
+    "announcements": [
+     {
+      "complete": true,
+      "date": "2026-09-23",
+      "delisting_category": true,
+      "excerpt_chars": 4140,
+      "excerpt_digest": "3a82f0b4fed233a4c2f65237ab8a45c6673f2a1a70008321fcdc08e96c76ebcb",
+      "excerpt_preview": "OKX to delist DORA, ICX, STORJ, ZEUS and ELF spot trading pairs\nOKX to delist DORA, ICX, STORJ, ZEUS and ELF spot trading pairs\nPublished on Sep 23, 2026 4 min read\nThis is a general update. Please check the availability of the listed token or product for your region in the app.\nIn order to maintain",
+      "names_token": false,
+      "readable": true,
+      "ref": "en-us/help/okx-to-delist-dora-icx-storj-zeus-and-elf-spot-trading-pairs",
+      "title": "OKX to delist DORA, ICX, STORJ, ZEUS and ELF spot trading pairs",
+      "url": "https://www.okx.com/en-us/help/okx-to-delist-dora-icx-storj-zeus-and-elf-spot-trading-pairs"
+     },
+     {
+      "complete": true,
+      "date": "2026-09-23",
+      "delisting_category": true,
+      "excerpt_chars": 2206,
+      "excerpt_digest": "a6e86dfcf96ae5ce8d9bbce593f479dc1bda925904cf0b2567222a47f04ca7b2",
+      "excerpt_preview": "OKX to delist selected USD spot trading pair\nOKX to delist selected USD spot trading pair\nPublished on Sep 23, 2026 2 min read\nIn order to maintain a robust spot trading environment, we constantly monitor the performance of all listed trading pairs and review their listing qualifications on a regula",
+      "names_token": false,
+      "readable": true,
+      "ref": "en-us/help/okx-to-delist-aeon-usd-spot-trading-pair",
+      "title": "OKX to delist selected USD spot trading pair",
+      "url": "https://www.okx.com/en-us/help/okx-to-delist-aeon-usd-spot-trading-pair"
+     }
+    ],
+    "as_of": "2026-10-04",
+    "list_covers_lookback": true,
+    "list_ok": true,
+    "list_reaches": "2025-09-01",
+    "market_detail": "state=live",
+    "market_state": "TRADING",
+    "market_url": "https://www.okx.com/api/v5/public/instruments?instType=SPOT&instId=BTC-USDT",
+    "matching_announcements": 2,
+    "scan_truncated": false
+   },
+   "reading": null,
+   "reasons": [],
+   "submitted_by": "0x5cdb5699bc1038e115A973bb91A646f7E98C075b",
+   "verdict": "TRADING",
+   "watch_id": "okx-btc"
+  }
+ },
+ {
+  "step": "borrow",
+  "watch_id": "kucoin-storj",
+  "collateral_value": 2000,
+  "amount": 1000,
+  "tx": "0x317af46e2be1bf7b0e3d7e998af04861dc360dfd24cc0fbb2ef3eaf36d79db19",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "AGREE",
+   "IDLE"
+  ],
+  "total_after": "1000"
+ },
+ {
+  "step": "borrow",
+  "watch_id": "okx-storj",
+  "collateral_value": 2000,
+  "amount": 1000,
+  "tx": "0x65c6ec2ec6b2bb0db4b93cfe057e77789c83f4062a5f88bcad5eaeb3cad62294",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "IDLE"
+  ],
+  "total_after": "0"
+ },
+ {
+  "step": "borrow",
+  "watch_id": "binance-storj",
+  "collateral_value": 2000,
+  "amount": 1000,
+  "tx": "0x5b3d1dfb60974548efb6432e6d8dbf08b18576004da72074e97c6b597caeca45",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "total_after": "0"
+ },
+ {
+  "step": "borrow",
+  "watch_id": "binance-btc",
+  "collateral_value": 2000,
+  "amount": 1001,
+  "tx": "0xc413efe867294c8df5446baade9073439e664a6a31ca887f9061c058de4bfe5f",
+  "result": "FINISHED_WITH_ERROR",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "total_after": "0"
+ },
+ {
+  "step": "borrow",
+  "watch_id": "binance-btc",
+  "collateral_value": 2000,
+  "amount": 800,
+  "tx": "0x9168dfd5b6e9d1a4048515d101cca9a82c0e3b5800c734b494eac612fe83510a",
+  "result": "FINISHED_WITH_RETURN",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "IDLE"
+  ],
+  "total_after": "800"
+ },
+ {
+  "step": "read",
+  "call": "is_tradeable(kucoin-storj, 86400)",
+  "value": true
+ },
+ {
+  "step": "read",
+  "call": "is_tradeable(kucoin-storj, 1)",
+  "value": false
+ },
+ {
+  "step": "read",
+  "call": "is_tradeable(okx-storj, 86400)",
+  "value": false
+ },
+ {
+  "step": "read",
+  "call": "is_tradeable(okx-storj, 1)",
+  "value": false
+ },
+ {
+  "step": "read",
+  "call": "is_tradeable(binance-storj, 86400)",
+  "value": false
+ },
+ {
+  "step": "read",
+  "call": "is_tradeable(binance-storj, 1)",
+  "value": false
+ },
+ {
+  "step": "read",
+  "call": "is_tradeable(binance-btc, 86400)",
+  "value": true
+ },
+ {
+  "step": "read",
+  "call": "is_tradeable(binance-btc, 1)",
+  "value": false
+ },
+ {
+  "step": "read",
+  "call": "is_tradeable(okx-btc, 86400)",
+  "value": true
+ },
+ {
+  "step": "read",
+  "call": "is_tradeable(okx-btc, 1)",
+  "value": false
+ }
+]

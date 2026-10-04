@@ -1,0 +1,182 @@
+{
+ "captured_at": "2026-10-04T18:17:18+00:00",
+ "captures": {
+  "okx_list_us.json": {
+   "url": "https://www.okx.com/api/v5/support/announcements?annType=announcements-delistings",
+   "status": 200,
+   "bytes": 4504,
+   "sha256": "f0c70c68d841c4e11aee38a3f0e3570c33760fcda0003ab538e4b2c6ab123cad",
+   "source": "studio-next",
+   "probe_contract": "0x41579FcC264faD9FaAB29FbD831A42A11E337E41",
+   "probe_tx": "0x73b32a8a0c4fdaa85c2b5e18f49da93c506f45504abd5889c0559fc1177b3bc2"
+  },
+  "binance_market_STORJUSDT.json": {
+   "url": "https://data-api.binance.vision/api/v3/exchangeInfo?symbol=STORJUSDT",
+   "status": 200,
+   "bytes": 5316,
+   "sha256": "e3363779307c874a47a39dd9f15e25d7280c6c832201c5706044a750d2324845"
+  },
+  "binance_market_BTCUSDT.json": {
+   "url": "https://data-api.binance.vision/api/v3/exchangeInfo?symbol=BTCUSDT",
+   "status": 200,
+   "bytes": 5335,
+   "sha256": "e2c14dda134c0c7005db1e17fee8c8471056c061f43966fa7f58eb268a3da832"
+  },
+  "binance_market_NOPEXUSDT.json": {
+   "url": "https://data-api.binance.vision/api/v3/exchangeInfo?symbol=NOPEXUSDT",
+   "status": 400,
+   "bytes": 38,
+   "sha256": "882fbec4a8b18dbba2b41cf9b2c93512b35d0a28c3a4961892d2419946857b9b"
+  },
+  "okx_market_STORJ-USDT.json": {
+   "url": "https://www.okx.com/api/v5/public/instruments?instType=SPOT&instId=STORJ-USDT",
+   "status": 200,
+   "bytes": 97,
+   "sha256": "230e2c076484f09587d279fd86ac17dce541f4acec83ffd9d40e60daf729f491"
+  },
+  "okx_market_BTC-USDT.json": {
+   "url": "https://www.okx.com/api/v5/public/instruments?instType=SPOT&instId=BTC-USDT",
+   "status": 200,
+   "bytes": 1083,
+   "sha256": "5868aba36f44605b113b2602986f4e2b2e08c55b6bb6381ee2d925be4ff03a12"
+  },
+  "kucoin_market_STORJ-USDT.json": {
+   "url": "https://api.kucoin.com/api/v2/symbols/STORJ-USDT",
+   "status": 200,
+   "bytes": 729,
+   "sha256": "9023dce577cbe0ecd3f5d940428e17da9049bc4496271e8e2b241ed492b88aef"
+  },
+  "kucoin_market_NOPEX-USDT.json": {
+   "url": "https://api.kucoin.com/api/v2/symbols/NOPEX-USDT",
+   "status": 200,
+   "bytes": 65,
+   "sha256": "6cdb38377344cc977403a9ae935ecd12b5b4fcf2f509a95a47c83830a8d27d18"
+  },
+  "binance_list.json": {
+   "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo=1&pageSize=50&catalogId=161",
+   "status": 200,
+   "bytes": 8602,
+   "sha256": "8e72d746e6629c7db7db406a8963db938c13ffd8846335b0279d562d7d974df9"
+  },
+  "okx_list.json": {
+   "url": "https://www.okx.com/api/v5/support/announcements?annType=announcements-delistings",
+   "status": 200,
+   "bytes": 4660,
+   "sha256": "dc31494be64e138bd95f7404f2428927a9468bc803f20e676549d7def9feeb79"
+  },
+  "kucoin_list.json": {
+   "url": "https://www.kucoin.com/_api/cms/articles?page=1&pageSize=50&category=delistings&lang=en_US",
+   "status": 200,
+   "bytes": 40655,
+   "sha256": "6fcd4e126d1b07e189a601f6485d2a4ceada31c1184d037db2c17823b878203b"
+  },
+  "binance_d_63415de54a164619aaaf245850349654.json": {
+   "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=63415de54a164619aaaf245850349654",
+   "status": 200,
+   "bytes": 27747,
+   "sha256": "ae41d8b4e28ac880300f9a09d4a213759bdb32344d60c9c9ee9a8db15fe665a6"
+  },
+  "binance_d_7d17add1ffe6416391f65a001734e1c7.json": {
+   "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=7d17add1ffe6416391f65a001734e1c7",
+   "status": 200,
+   "bytes": 29354,
+   "sha256": "ad068f4238508bcd325bb8f90d7537b381277fb4e249ee6c8f836da464688915"
+  },
+  "binance_d_545ca5ad28254999b793bcf1ddd51f93.json": {
+   "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=545ca5ad28254999b793bcf1ddd51f93",
+   "status": 200,
+   "bytes": 27853,
+   "sha256": "fd17bccc44963a93a4b0a877b6975183a8b045ea9f85eb4344aaae235584b534"
+  },
+  "binance_d_30b1347d97324180bb469c761e4eed5a.json": {
+   "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=30b1347d97324180bb469c761e4eed5a",
+   "status": 200,
+   "bytes": 27749,
+   "sha256": "7e69653c9aa639c847c68d7dce535ce825cfaa7d7f49007686ed6a519c4789a2"
+  },
+  "binance_d_b9198262dd5f4071a1119b9f52cbe00c.json": {
+   "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=b9198262dd5f4071a1119b9f52cbe00c",
+   "status": 200,
+   "bytes": 27743,
+   "sha256": "4dbf6ee8898440faa0225689105318c084dcfe90773f90cfe7a6885277bf6729"
+  },
+  "binance_d_d72915ed7a60473b92f0818d959a227a.json": {
+   "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=d72915ed7a60473b92f0818d959a227a",
+   "status": 200,
+   "bytes": 111871,
+   "sha256": "9ba924d250791e28445b5bd8a13ac6b76c8e2b0ecf44f5d362ffe6d3d18fb529"
+  },
+  "binance_d_fab1676df7fb464a9e4634c6f777659e.json": {
+   "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=fab1676df7fb464a9e4634c6f777659e",
+   "status": 200,
+   "bytes": 27801,
+   "sha256": "9c24fb0bfd651c99727ffe18112dbc511ca0f91d0108eb7193a1fad70620c97e"
+  },
+  "binance_d_b2d783892ef54b4daddecf142076a8cf.json": {
+   "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=b2d783892ef54b4daddecf142076a8cf",
+   "status": 200,
+   "bytes": 28275,
+   "sha256": "3d3b4fc4f3193c7f960b863dda20adc2047732e1491df4665fe55253a35680e8"
+  },
+  "binance_d_23504a5454d545998414c9ad3e8832f3.json": {
+   "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=23504a5454d545998414c9ad3e8832f3",
+   "status": 200,
+   "bytes": 27741,
+   "sha256": "7424cb43f5389d5d1550e486d207863943d7b1019ffd76521c19944981000ea7"
+  },
+  "okx_d_help_okx-to-delist-dora-icx-storj-zeus-and-elf-spot-trading-pairs.html": {
+   "url": "https://www.okx.com/help/okx-to-delist-dora-icx-storj-zeus-and-elf-spot-trading-pairs",
+   "status": 200,
+   "bytes": 91110,
+   "sha256": "3de5c58956c4dcefc15daccc95940331a2ce5464a3e085ba0f8f16410d17b5fe"
+  },
+  "okx_d_help_okx-to-delist-aeon-usd-spot-trading-pair.html": {
+   "url": "https://www.okx.com/help/okx-to-delist-aeon-usd-spot-trading-pair",
+   "status": 200,
+   "bytes": 74692,
+   "sha256": "bcc73a8af670d0c85831c5fa910122b72d83d5b3c3c0883f18af00a6d0920c61"
+  },
+  "okx_d_help_okx-to-delist-selected-usds-spot-trading-pairs.html": {
+   "url": "https://www.okx.com/help/okx-to-delist-selected-usds-spot-trading-pairs",
+   "status": 200,
+   "bytes": 75147,
+   "sha256": "ffd02f21ca46781d9788a15da94aa54f4522b9088fd3c1dc0fe56e1bda586c05"
+  },
+  "okx_d_en-us_help_okx-to-delist-dora-icx-storj-zeus-and-elf-spot-trading-pairs.html": {
+   "url": "https://www.okx.com/en-us/help/okx-to-delist-dora-icx-storj-zeus-and-elf-spot-trading-pairs",
+   "status": 200,
+   "bytes": 74646,
+   "sha256": "eb869badcb733c66ffafe82f9d9dd62b9521d35c4bd478b390ae9c3deb8d0da0"
+  },
+  "okx_d_en-us_help_okx-to-delist-aeon-usd-spot-trading-pair.html": {
+   "url": "https://www.okx.com/en-us/help/okx-to-delist-aeon-usd-spot-trading-pair",
+   "status": 200,
+   "bytes": 64735,
+   "sha256": "a06cb44adad6b80c74ec3d6cebf5d96bf14c80544c3a5d4d7c5dcf943b666632"
+  },
+  "okx_d_en-us_help_okx-to-delist-selected-usd-spot-trading-pairs.html": {
+   "url": "https://www.okx.com/en-us/help/okx-to-delist-selected-usd-spot-trading-pairs",
+   "status": 200,
+   "bytes": 68082,
+   "sha256": "77e77b3b77b5998a654c001233cba9be508b50ee5c97a7a7078b7b273d6a6a20"
+  },
+  "kucoin_d_en-kucoin-futures-will-delist-the-icxusdt-and-storjusdt-perpetual-contracts-and-related-services-2026-08-26.json": {
+   "url": "https://www.kucoin.com/_api/cms/articles/en-kucoin-futures-will-delist-the-icxusdt-and-storjusdt-perpetual-contracts-and-related-services-2026-08-26?lang=en_US",
+   "status": 200,
+   "bytes": 15941,
+   "sha256": "f6de4c9f017a1d52717b62b135a60c492191163b12f9634a6983a3388e61071e"
+  },
+  "kucoin_d_en-st-kucoin-will-delist-multiple-tokens-on-2026-09-07-1.json": {
+   "url": "https://www.kucoin.com/_api/cms/articles/en-st-kucoin-will-delist-multiple-tokens-on-2026-09-07-1?lang=en_US",
+   "status": 200,
+   "bytes": 7801,
+   "sha256": "3ae31ba2ecdeb6d493b1f923c08846383480c79caf6d8d31d687942c7c93e933"
+  },
+  "kucoin_d_en-kucoin-earn-will-delist-the-waxp-products.json": {
+   "url": "https://www.kucoin.com/_api/cms/articles/en-kucoin-earn-will-delist-the-waxp-products?lang=en_US",
+   "status": 200,
+   "bytes": 6323,
+   "sha256": "38e283437c647c99918abc238c095dabef712cf9adef68f53fff8d8d92b60569"
+  }
+ }
+}

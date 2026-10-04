@@ -1,0 +1,287 @@
+halted Binance market read as trading
+---
+            return ["TRADING" if symbol["status"] == "TRADING" else "NOT_TRADING", "status=" + symbol["status"]]
+---
+            return ["TRADING", "status=" + symbol["status"]]
+===
+halted OKX market read as trading
+---
+            return ["TRADING" if inst["state"] == "live" else "NOT_TRADING", "state=" + inst["state"]]
+---
+            return ["TRADING", "state=" + inst["state"]]
+===
+disabled KuCoin market read as trading
+---
+            return ["TRADING" if data["enableTrading"] else "NOT_TRADING",
+---
+            return ["TRADING" if True else "NOT_TRADING",
+===
+market answer for another symbol accepted
+---
+        if status == 200 and _get(symbol, "symbol") == base + quote and _get(symbol, "baseAsset") == base \
+---
+        if status == 200 and _get(symbol, "baseAsset") is not None \
+===
+unlisted pair falls through to announcements
+---
+    if state in ("NOT_TRADING", "NOT_LISTED"):
+---
+    if state == "NOT_TRADING":
+===
+announcements read even when the market is not trading
+---
+    if _market_state(exchange, base, quote, market[0], market[1])[0] == "TRADING":
+---
+    if True:
+===
+unreadable market api not reported as such
+---
+    if state == "UNAVAILABLE":
+        return ["UNDETERMINED", [f"market_unavailable:{summary['market_detail']}"], ""]
+---
+    if False:
+        return ["UNDETERMINED", [f"market_unavailable:{summary['market_detail']}"], ""]
+===
+malformed list entries silently skipped
+---
+    if any(i is None for i in items):
+        return None
+---
+    items = [i for i in items if i is not None]
+===
+foreign OKX announcement URL accepted
+---
+        m = re.fullmatch(r"https://www\.okx\.com/((?:[a-z]{2}-[a-z]{2}/)?help/[a-z0-9-]{1,200})", url) \
+---
+        m = re.fullmatch(r"https://[^/]+/((?:[a-z]{2}-[a-z]{2}/)?help/[a-z0-9-]{1,200})", url) \
+===
+OKX regional help centre not accepted
+---
+        m = re.fullmatch(r"https://www\.okx\.com/((?:[a-z]{2}-[a-z]{2}/)?help/[a-z0-9-]{1,200})", url) \
+---
+        m = re.fullmatch(r"https://www\.okx\.com/(help/[a-z0-9-]{1,200})", url) \
+===
+OKX entry outside the delisting type accepted
+---
+        if m is None or _get(raw, "annType") != OKX_DELISTING_TYPE:
+---
+        if m is None:
+===
+KuCoin entry outside the delisting category accepted
+---
+                or not isinstance(categories, list) \
+                or not any(_get(c, "path") == KUCOIN_DELISTING_CATEGORY for c in categories):
+---
+                or not isinstance(categories, list):
+===
+KuCoin path not restricted to a slug
+---
+        if not (isinstance(ref, str) and re.fullmatch(r"/[A-Za-z0-9_-]{1,200}", ref)) \
+---
+        if not (isinstance(ref, str) and re.fullmatch(r"/[A-Za-z0-9_./-]{1,200}", ref)) \
+===
+Binance list from another catalog accepted
+---
+        raw = _get(catalog, "articles") if _get(catalog, "catalogId") == BINANCE_DELISTING_CATALOG else None
+---
+        raw = _get(catalog, "articles")
+===
+list coverage not checked
+---
+    facts["list_covers_lookback"] = _list_reaches_back(items, today_iso)
+---
+    facts["list_covers_lookback"] = True
+===
+named-announcement window widened
+---
+NAMED_LOOKBACK_DAYS = 60
+---
+NAMED_LOOKBACK_DAYS = 90
+===
+spot-notice window widened
+---
+NOTICE_LOOKBACK_DAYS = 21
+---
+NOTICE_LOOKBACK_DAYS = 30
+===
+announcements from after the check date scanned
+---
+    return [i for i in items if i["date"] <= today_iso and (
+---
+    return [i for i in items if (
+===
+product-scoped titles scanned as spot notices
+---
+        re.search(r"\bspot\b", title, re.I) is not None or OTHER_PRODUCT.search(title) is None)
+---
+        True)
+===
+tickers glued to a quote not recognised
+---
+    return re.search(r"(?<![A-Za-z0-9])" + re.escape(base) + r"(?:" + glued + r")?(?![A-Za-z0-9])",
+---
+    return re.search(r"(?<![A-Za-z0-9])" + re.escape(base) + r"(?![A-Za-z0-9])",
+===
+scan cap not enforced
+---
+    facts["scan_truncated"] = len(matching) > MAX_CANDIDATES
+---
+    facts["scan_truncated"] = False
+===
+Binance page for another announcement accepted
+---
+        if _get(data, "code") != ref or not isinstance(_get(data, "title"), str) or tree is None:
+---
+        if not isinstance(_get(data, "title"), str) or tree is None:
+===
+OKX page for another announcement accepted
+---
+        if _get(post, "slug") != ref.rsplit("/", 1)[-1] or not isinstance(_get(post, "title"), str) \
+---
+        if not isinstance(_get(post, "title"), str) \
+===
+KuCoin page for another announcement accepted
+---
+    if _get(data, "path") != ref or not isinstance(_get(data, "title"), str) \
+---
+    if not isinstance(_get(data, "title"), str) \
+===
+Binance category not verified
+---
+                "delisting_category": BINANCE_DELISTING_CATALOG in catalogs}
+---
+                "delisting_category": True}
+===
+OKX category not verified
+---
+                "delisting_category": _get(post, "section", "slug") == OKX_DELISTING_TYPE}
+---
+                "delisting_category": True}
+===
+unreadable announcement ignored
+---
+        if not a["readable"]:
+            problems.append(f"announcement_unreadable:{a['ref']}")
+---
+        if False:
+            problems.append(f"announcement_unreadable:{a['ref']}")
+===
+reader shown announcements that never name the token
+---
+    return [a for a in facts["announcements"] if a["readable"] and a["delisting_category"] and a["names_token"]]
+---
+    return [a for a in facts["announcements"] if a["readable"] and a["delisting_category"]]
+===
+cut announcement cleared
+---
+    problems += [f"announcement_too_long_to_clear:{a['ref']}" for a in shown if not a["complete"]]
+---
+    pass
+===
+reader sees less than the whole announcement
+---
+EXCERPT_CAP = 12000
+---
+EXCERPT_CAP = 60000
+===
+stitched quote needs only one genuine fragment
+---
+    return all(f in haystack for f in fragments)
+---
+    return any(f in haystack for f in fragments)
+===
+effective date not grounded
+---
+    return bool(reading["ends_spot"]) and _quote_grounded(reading["evidence"], facts) \
+        and _date_grounded(reading["effective_date"], facts)
+---
+    return bool(reading["ends_spot"]) and _quote_grounded(reading["evidence"], facts) \
+        and reading["effective_date"] is not None
+===
+ungrounded delisting claim published
+---
+        if not reading["grounded"]:
+            return ["UNDETERMINED", ["delisting_claim_unquoted"], ""]
+---
+        if False:
+            return ["UNDETERMINED", ["delisting_claim_unquoted"], ""]
+===
+passed delisting date ignored
+---
+        if reading["effective_date"] < summary["as_of"]:
+---
+        if False:
+===
+missing reader answer treated as trading
+---
+    if shown and reading is None:
+---
+    if False:
+===
+garbage reader answer accepted
+---
+    if not isinstance(result, dict) or not isinstance(result.get("ends_spot"), bool):
+---
+    if not isinstance(result, dict) or "ends_spot" not in result:
+===
+validator skips the facts digest
+---
+            if leader.get("facts_digest") != _digest(my_facts) or leader.get("facts") != _summary(my_facts):
+---
+            if leader.get("facts") != _summary(my_facts):
+===
+validator skips the stored facts
+---
+            if leader.get("facts_digest") != _digest(my_facts) or leader.get("facts") != _summary(my_facts):
+---
+            if leader.get("facts_digest") != _digest(my_facts):
+===
+validator accepts a reading of nothing
+---
+                if not _readable(my_facts) or theirs["grounded"] != _reading_grounded(theirs, my_facts):
+---
+                if theirs["grounded"] != _reading_grounded(theirs, my_facts):
+===
+validator trusts the leader's grounding
+---
+                if not _readable(my_facts) or theirs["grounded"] != _reading_grounded(theirs, my_facts):
+---
+                if not _readable(my_facts):
+===
+validator ignores the effective date
+---
+            return their_verdict == my_verdict and their_date == my_date
+---
+            return their_verdict == my_verdict
+===
+validator does not run its own reader
+---
+            my_verdict, _, my_date = _decide(summary, _read(my_facts, watch))
+---
+            my_verdict, _, my_date = _decide(summary, theirs)
+===
+registration accepts injected tickers
+---
+        _require(re.fullmatch(r"[A-Z0-9]{1,15}", base) is not None, "base must be 1-15 characters of A-Z or 0-9")
+---
+        _require(len(base) >= 1, "base must be 1-15 characters of A-Z or 0-9")
+===
+registration accepts unsupported exchanges
+---
+        _require(exchange in EXCHANGES, f"exchange must be one of {', '.join(EXCHANGES)}")
+---
+        _require(len(exchange) > 0, f"exchange must be one of {', '.join(EXCHANGES)}")
+===
+consumer view ignores freshness
+---
+        return 0 <= age <= max_age_seconds
+---
+        return True
+===
+consumer view accepts any verdict
+---
+        if c.verdict != "TRADING":
+            return False
+---
+        if False:
+            return False
