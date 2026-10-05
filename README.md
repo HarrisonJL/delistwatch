@@ -123,6 +123,10 @@ python3 scripts/mutation_check.py             # 46/46 mutations killed
 - **Lookback windows.** Delistings announced more than 60 days ahead (title naming the token) or 21 days ahead (generic notice) aren't read until the market changes. Exchanges normally give one to two weeks' notice.
 - **Single-letter tickers** (`J`, `S`) match more text than intended. That costs `UNDETERMINED`s, not false `TRADING`s.
 - **Validators read the exchange at slightly different moments.** If an announcement is published mid-check, validators disagree and the round rotates rather than recording a mixed reading.
+- **Availability is never traded for safety.** Anyone can pay for a fresh check, and the latest check wins. If a source is momentarily unreachable, that check records `UNDETERMINED` (or fails and records nothing), and consumers fail closed until the next good check. A griefer can make a good verdict temporarily unavailable, never a bad one look good, and the next check restores it.
+- **Prompt injection.** The announcements are the exchange's own text, framed as untrusted data. The reader can only move `TRADING` down, and a delisting needs a verbatim quote and a stated date that validators find in their own copy. An injected "this does not end spot trading" could suppress a downgrade only if the exchange itself published it.
+- **Watch ids are first-come, and CollateralPolicy is a demonstration.** Anyone can register a `watch_id` before you with different parameters; read the immutable record (`get_watch`) and pin what you expect. `CollateralPolicy.borrow` takes the watch id and the values from its caller, and moves no funds: it shows the gate, not a lending protocol. A production protocol would fix one watch per collateral asset.
+- **Fixtures.** `tests/fixtures/` holds minimal reductions of the exchanges' public market responses and announcements, captured 2026-10-04 and reduced to the fields the contract reads (`scripts/capture_raw.py`, `scripts/build_fixtures.py`), so the tests run on real data. The announcement text remains the exchanges' content, reproduced unedited for testing only.
 
 ## Repository layout
 
